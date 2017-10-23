@@ -1,9 +1,9 @@
-FROM ubuntu:latest
+FROM python:2.7
+ADD requirements.txt /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt
+ADD . /code
+WORKDIR /code
+EXPOSE 5000
+CMD ["python", "app.py"]
 
-RUN apt-get update
-RUN apt-get install -y python python-pip wget
-RUN pip install Flask
 
-ADD app.py /home/hello.py
-
-WORKDIR /home
