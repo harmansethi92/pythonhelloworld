@@ -1,14 +1,9 @@
 from flask import Flask
 app = Flask(__name__)
 
- 
 @app.route("/")
-def main():
-    return " Hello World 123"
-
-@app.route('/how are you')
 def hello():
-    return 'I am  good, how about you?' 
-
+    return "Hello World! 123"
 if __name__ == "__main__":
-    app.run(host='0.0.0.0' , port=5000)
+    app.run(host="0.0.0.0")
+
