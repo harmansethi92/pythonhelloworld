@@ -1,4 +1,7 @@
 # pythonhelloworld
+My main focus of this project is to automate the whole application development through Jenkins, Dockers, git and AWS.
+This project does not focus on the development of the application.
+
 Requirments
 
 The requirments for this project are:
