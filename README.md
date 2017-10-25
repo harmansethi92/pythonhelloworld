@@ -1,6 +1,23 @@
 # pythonhelloworld
-This is one of the projects I have worked on.
-
 Requirments
 
 The requirments for this project are:
+
+There must be a hello world web application in your personal Github account.
+
+There must be a running instance of Jenkins in AWS with a public DNS name 
+
+There must be a running instance of your application in AWS with a public DNS name
+
+Github must be configured to notify the Jenkins instance on every commit
+
+Jenkins must be configured to build and deploy a Docker image on every commit notification from Github
+
+Your application instance must reflect changes from every commit pushed to Github
+
+
+Jenkins DNS name: ec2-54-152-16-11.compute-1.amazonaws.com
+
+application DNS name: ec2-54-89-58-196.compute-1.amazonaws.com
+
+The jenkins is setup to build whenever the commit is made to Github repository. Which further build and publishes the Docker Image to DockerHub. 
